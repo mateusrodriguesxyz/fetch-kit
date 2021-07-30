@@ -8,10 +8,10 @@ let package = Package(
         .iOS(.v14)
     ],
     products: [
-        .library(
-            name: "FetchKit",
-            targets: ["FetchKit"]
-        ),
+//        .library(
+//            name: "FetchKit",
+//            targets: ["FetchKit"]
+//        ),
          .library(
              name: "FetchKitSwift",
              targets: ["FetchKit", "FetchKitSwift"]
