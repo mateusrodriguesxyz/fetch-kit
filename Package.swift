@@ -23,10 +23,10 @@ let package = Package(
             path: "FetchKit",
             publicHeadersPath: ""
         ),
-        .target(
-            name: "FetchKitSwift",
-            dependencies: ["FetchKit"],
-            path: "FetchKitSwift"
-        )
+//         .target(
+//             name: "FetchKitSwift",
+//             dependencies: ["FetchKit"],
+//             path: "FetchKitSwift"
+//         )
     ]
 )
