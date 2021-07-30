@@ -12,6 +12,7 @@
 		DC4407D1267BA81100132863 /* FetchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DC4407C5267BA81100132863 /* FetchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC4407DC267BA84A00132863 /* Fetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = DC4407DA267BA84A00132863 /* Fetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC4407DD267BA84A00132863 /* Fetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4407DB267BA84A00132863 /* Fetcher.m */; };
+		DCC314FB26B2DAE300554A9E /* Fetcher+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC314FA26B2DAE300554A9E /* Fetcher+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		DC4407CF267BA81100132863 /* FetchKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FetchKitTests.m; sourceTree = "<group>"; };
 		DC4407DA267BA84A00132863 /* Fetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fetcher.h; sourceTree = "<group>"; };
 		DC4407DB267BA84A00132863 /* Fetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fetcher.m; sourceTree = "<group>"; };
+		DCC314FA26B2DAE300554A9E /* Fetcher+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetcher+Extension.swift"; sourceTree = "<group>"; };
 		DCF8339C26A890CB002B95FC /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		DCF8339D26A890CB002B95FC /* FetchKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FetchKit.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +79,7 @@
 		DC4407C4267BA81100132863 /* FetchKit */ = {
 			isa = PBXGroup;
 			children = (
+				DCC314FA26B2DAE300554A9E /* Fetcher+Extension.swift */,
 				DC4407DA267BA84A00132863 /* Fetcher.h */,
 				DC4407DB267BA84A00132863 /* Fetcher.m */,
 				DC4407C5267BA81100132863 /* FetchKit.h */,
@@ -154,7 +157,7 @@
 				TargetAttributes = {
 					DC4407C1267BA81100132863 = {
 						CreatedOnToolsVersion = 13.0;
-						LastSwiftMigration = 1300;
+						LastSwiftMigration = 1250;
 					};
 					DC4407C9267BA81100132863 = {
 						CreatedOnToolsVersion = 13.0;
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC4407DD267BA84A00132863 /* Fetcher.m in Sources */,
+				DCC314FB26B2DAE300554A9E /* Fetcher+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +407,7 @@
 		DC4407D8267BA81100132863 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -422,6 +427,7 @@
 		DC4407D9267BA81100132863 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

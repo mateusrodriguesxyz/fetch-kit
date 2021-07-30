@@ -9,6 +9,19 @@
 
 @implementation Fetcher
 
++ (UIViewController *)instantiateOfType:(Class)type {
+    if ([type conformsToProtocol:@protocol(Storyboarded)]) {
+        // LÓGICA DE INSTANCIAR DO STORYBOARD
+        return  [UIViewController init];
+    } else {
+        return NULL;
+    }
+}
+
++ (UIViewController *)instantiate:(id<Storyboarded>)controller {
+    return  [UIViewController init];
+}
+
 /// Lorem Ipsum
 /// @param request Lorem Ipsum
 /// @param completionHandler Lorem Ipsum

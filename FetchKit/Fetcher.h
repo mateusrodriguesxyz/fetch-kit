@@ -6,10 +6,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+@protocol Storyboarded
+@end
 
 @interface Fetcher : NSObject
 
-+ (void)perform:(NSURLRequest*)request completionHandler:(void (^)(NSData * , NSError *))completionHandler;
++ (UIViewController*) instantiateOfType: (Class)type ;
+
+
++ (void)perform:(NSURLRequest*)request completionHandler:(void (^)(NSData * , NSError *))completionHandler NS_REFINED_FOR_SWIFT;
 
 @end
 
