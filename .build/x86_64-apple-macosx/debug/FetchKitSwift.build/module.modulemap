@@ -1,4 +1,0 @@
-module FetchKitSwift {
-    header "/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/.build/x86_64-apple-macosx/debug/FetchKitSwift.build/FetchKitSwift-Swift.h"
-    requires objc
-}
