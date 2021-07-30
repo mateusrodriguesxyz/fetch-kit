@@ -80,9 +80,8 @@
 		DC4407C4267BA81100132863 /* FetchKit */ = {
 			isa = PBXGroup;
 			children = (
-				DC4407DA267BA84A00132863 /* Fetcher.h */,
+				DCC3153B26B4305400554A9E /* include */,
 				DC4407DB267BA84A00132863 /* Fetcher.m */,
-				DC4407C5267BA81100132863 /* FetchKit.h */,
 			);
 			path = FetchKit;
 			sourceTree = "<group>";
@@ -101,6 +100,15 @@
 				DCC314FA26B2DAE300554A9E /* Fetcher+Extension.swift */,
 			);
 			path = FetchKitSwift;
+			sourceTree = "<group>";
+		};
+		DCC3153B26B4305400554A9E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				DC4407DA267BA84A00132863 /* Fetcher.h */,
+				DC4407C5267BA81100132863 /* FetchKit.h */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
