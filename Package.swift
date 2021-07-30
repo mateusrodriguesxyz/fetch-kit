@@ -25,7 +25,7 @@ let package = Package(
         ),
         .target(
             name: "FetchKitSwift",
-            path: "FetchKitSwift"
+            dependencies: ["FetchKit"]
         )
     ]
 )
