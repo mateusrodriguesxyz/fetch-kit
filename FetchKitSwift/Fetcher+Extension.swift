@@ -7,7 +7,7 @@
 
 #if SWIFT_PACKAGE
 
-import FetchKit
+@_exported import FetchKit
 
 extension Fetcher {
     
