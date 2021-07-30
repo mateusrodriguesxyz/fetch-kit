@@ -62,6 +62,7 @@
 				DCF8339D26A890CB002B95FC /* FetchKit.podspec */,
 				DCF8339C26A890CB002B95FC /* Package.swift */,
 				DC4407C4267BA81100132863 /* FetchKit */,
+				DCC314FF26B4294900554A9E /* FetchKitSwift */,
 				DC4407CE267BA81100132863 /* FetchKitTests */,
 				DC4407C3267BA81100132863 /* Products */,
 			);
@@ -79,7 +80,6 @@
 		DC4407C4267BA81100132863 /* FetchKit */ = {
 			isa = PBXGroup;
 			children = (
-				DCC314FA26B2DAE300554A9E /* Fetcher+Extension.swift */,
 				DC4407DA267BA84A00132863 /* Fetcher.h */,
 				DC4407DB267BA84A00132863 /* Fetcher.m */,
 				DC4407C5267BA81100132863 /* FetchKit.h */,
@@ -93,6 +93,14 @@
 				DC4407CF267BA81100132863 /* FetchKitTests.m */,
 			);
 			path = FetchKitTests;
+			sourceTree = "<group>";
+		};
+		DCC314FF26B4294900554A9E /* FetchKitSwift */ = {
+			isa = PBXGroup;
+			children = (
+				DCC314FA26B2DAE300554A9E /* Fetcher+Extension.swift */,
+			);
+			path = FetchKitSwift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

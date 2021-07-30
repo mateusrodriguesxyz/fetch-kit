@@ -9,7 +9,7 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "FetchKit",
+            name: "FetchKitSwift",
             targets: ["FetchKit"]),
     ],
     targets: [
