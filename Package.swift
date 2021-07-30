@@ -12,10 +12,10 @@ let package = Package(
             name: "FetchKit",
             targets: ["FetchKit"]
         ),
-        .library(
-            name: "FetchKitSwift",
-            targets: ["FetchKit", "FetchKitSwift"]
-        ),
+//         .library(
+//             name: "FetchKitSwift",
+//             targets: ["FetchKit", "FetchKitSwift"]
+//         ),
     ],
     targets: [
         .target(
