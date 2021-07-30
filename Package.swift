@@ -21,7 +21,7 @@ let package = Package(
         .target(
             name: "FetchKit",
             path: "FetchKit",
-            publicHeadersPath: ""
+            publicHeadersPath: "FetchKit"
         ),
 //         .target(
 //             name: "FetchKitSwift",
