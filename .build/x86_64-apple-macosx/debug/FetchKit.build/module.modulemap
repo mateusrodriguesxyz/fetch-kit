@@ -1,0 +1,4 @@
+module FetchKit {
+    umbrella header "/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/FetchKit/FetchKit.h"
+    export *
+}

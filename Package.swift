@@ -9,13 +9,23 @@ let package = Package(
     ],
     products: [
         .library(
+            name: "FetchKit",
+            targets: ["FetchKit"]
+        ),
+        .library(
             name: "FetchKitSwift",
-            targets: ["FetchKit"]),
+            targets: ["FetchKit", "FetchKitSwift"]
+        ),
     ],
     targets: [
         .target(
             name: "FetchKit",
             path: "FetchKit",
-            publicHeadersPath: "")
+            publicHeadersPath: ""
+        ),
+        .target(
+            name: "FetchKitSwift",
+            path: "FetchKitSwift"
+        )
     ]
 )

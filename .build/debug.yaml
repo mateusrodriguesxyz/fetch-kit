@@ -1,0 +1,57 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "FetchKit-debug.module": ["<FetchKit-debug.module>"]
+  "FetchKitSwift-debug.module": ["<FetchKitSwift-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<FetchKit-debug.module>","<FetchKitSwift-debug.module>"]
+  "test": ["<FetchKit-debug.module>","<FetchKitSwift-debug.module>"]
+default: "main"
+nodes:
+  "/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/FetchKit/":
+    is-directory-structure: true
+  "/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/FetchKitSwift/":
+    is-directory-structure: true
+commands:
+  "/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/.build/x86_64-apple-macosx/debug/FetchKit.build/Fetcher.m.o":
+    tool: clang
+    inputs: ["/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/FetchKit/Fetcher.m"]
+    outputs: ["/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/.build/x86_64-apple-macosx/debug/FetchKit.build/Fetcher.m.o"]
+    description: "Compiling FetchKit Fetcher.m"
+    args: ["/Applications/Xcode 12.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-fobjc-arc","-target","x86_64-apple-macosx10.10","-isysroot","/Applications/Xcode 12.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk","-F","/Applications/Xcode 12.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-fPIC","-g","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/.build/x86_64-apple-macosx/debug/index/store","-fmodules","-fmodule-name=FetchKit","-I","/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/FetchKit","-fmodules-cache-path=/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/.build/x86_64-apple-macosx/debug/ModuleCache","-MD","-MT","dependencies","-MF","/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/.build/x86_64-apple-macosx/debug/FetchKit.build/Fetcher.m.d","-c","/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/FetchKit/Fetcher.m","-o","/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/.build/x86_64-apple-macosx/debug/FetchKit.build/Fetcher.m.o"]
+    deps: "/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/.build/x86_64-apple-macosx/debug/FetchKit.build/Fetcher.m.d"
+
+  "<FetchKit-debug.module>":
+    tool: phony
+    inputs: ["/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/.build/x86_64-apple-macosx/debug/FetchKit.build/Fetcher.m.o"]
+    outputs: ["<FetchKit-debug.module>"]
+
+  "<FetchKitSwift-debug.module>":
+    tool: phony
+    inputs: ["/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/.build/x86_64-apple-macosx/debug/FetchKitSwift.build/Fetcher+Extension.swift.o","/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/.build/x86_64-apple-macosx/debug/FetchKitSwift.swiftmodule"]
+    outputs: ["<FetchKitSwift-debug.module>"]
+
+  "C.FetchKitSwift-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/FetchKitSwift/Fetcher+Extension.swift"]
+    outputs: ["/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/.build/x86_64-apple-macosx/debug/FetchKitSwift.build/Fetcher+Extension.swift.o","/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/.build/x86_64-apple-macosx/debug/FetchKitSwift.swiftmodule"]
+    executable: "/Applications/Xcode 12.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "FetchKitSwift"
+    module-output-path: "/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/.build/x86_64-apple-macosx/debug/FetchKitSwift.swiftmodule"
+    import-paths: ["/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/.build/x86_64-apple-macosx/debug/FetchKitSwift.build"
+    objects: ["/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/.build/x86_64-apple-macosx/debug/FetchKitSwift.build/Fetcher+Extension.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode 12.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk","-F","/Applications/Xcode 12.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode 12.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode 12.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j16","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-emit-objc-header","-emit-objc-header-path","/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/.build/x86_64-apple-macosx/debug/FetchKitSwift.build/FetchKitSwift-Swift.h","-color-diagnostics"]
+    sources: ["/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/FetchKitSwift/Fetcher+Extension.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 16
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/FetchKit/","/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/FetchKitSwift/","/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/Package.swift","/Users/mateusrodrigues/Desktop/objc-challenge/FetchKit/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
