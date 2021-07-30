@@ -16,7 +16,7 @@
 + (UIViewController*) instantiateOfType: (Class)type ;
 
 
-+ (void)perform:(NSURLRequest*)request completionHandler:(void (^)(NSData * , NSError *))completionHandler NS_REFINED_FOR_SWIFT;
++ (void)run:(NSURLRequest*)request completionHandler:(void (^)(NSData * , NSError *))completionHandler NS_REFINED_FOR_SWIFT;
 
 @end
 

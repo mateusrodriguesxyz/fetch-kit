@@ -11,8 +11,12 @@ import FetchKit
 
 extension Fetcher {
     
-    public static func myPeform(numbers: [Int], request: URLRequest, completion: @escaping (Data?, Error?) -> Void) {
-        __perform(request, completionHandler: completion)
+    public static func customRun(numbers: [Int], request: URLRequest, completion: @escaping (Data?, Error?) -> Void) {
+        __run(request, completionHandler: completion)
+    }
+    
+    public static func anotherCustomRun(numbers: [Int], request: URLRequest, completion: @escaping (Data?, Error?) -> Void) {
+        __run(request, completionHandler: completion)
     }
     
 }
