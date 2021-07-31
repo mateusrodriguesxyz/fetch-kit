@@ -13,18 +13,18 @@ let package = Package(
 //            targets: ["FetchKit"]
 //        ),
          .library(
-             name: "FetchKitSwift",
-             targets: ["FetchKitSwift"]
+             name: "FetchKit",
+             targets: ["__FetchKit", "FetchKitSwift"]
          ),
     ],
     targets: [
         .target(
-            name: "FetchKit",
+            name: "__FetchKit",
             path: "FetchKit"
         ),
          .target(
              name: "FetchKitSwift",
-             dependencies: ["FetchKit"],
+             dependencies: ["__FetchKit"],
              path: "FetchKitSwift"
          )
     ]
