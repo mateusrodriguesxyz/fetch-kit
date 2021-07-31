@@ -14,7 +14,7 @@ let package = Package(
 //        ),
          .library(
              name: "FetchKit",
-             targets: ["__FetchKit", "FetchKitSwift"]
+             targets: ["__FetchKit", "FetchKit"]
          ),
     ],
     targets: [
@@ -23,7 +23,7 @@ let package = Package(
             path: "FetchKit"
         ),
          .target(
-             name: "FetchKitSwift",
+             name: "FetchKit",
              dependencies: ["__FetchKit"],
              path: "FetchKitSwift"
          )
